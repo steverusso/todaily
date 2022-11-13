@@ -17,7 +17,7 @@ import (
 	"gioui.org/op/paint"
 	"gioui.org/widget"
 	"gioui.org/widget/material"
-	"github.com/steverusso/giofonts/ubuntu"
+	"github.com/steverusso/giofonts/vegur"
 )
 
 type (
@@ -182,7 +182,7 @@ func run(dbFile string, showFrameTimes bool) error {
 	)
 	win.Perform(system.ActionCenter)
 
-	th := material.NewTheme(ubuntu.Collection())
+	th := material.NewTheme(vegur.Collection())
 	th.TextSize = 17
 	th.Palette = material.Palette{
 		Bg:         color.NRGBA{17, 21, 24, 255},
