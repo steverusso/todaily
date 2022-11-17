@@ -178,11 +178,14 @@ func (hs *homeScreen) layDaySelection(gtx C, th *material.Theme, monthColWidth i
 				}
 				clr := color.NRGBA{80, 80, 80, 132}
 				dims := drawSquare(gtx, clr, cellWidth, cellHeight) // Cell background.
-				if p := cell.summary.PctCompl; p > 0 {
+				p := cell.summary.PctCompl
+				if p == 1 {
+					clr = color.NRGBA{79, 225, 255, 255}
+				} else if p > 0 {
 					clr = th.ContrastBg
-					clr.A = byte(float32(255) * p)
-					drawSquare(gtx, clr, int(cellWidth*p), cellHeight) // Cell completion progress.
+					clr.A /= 2
 				}
+				drawSquare(gtx, clr, int(cellWidth*p), cellHeight) // Cell completion progress.
 				defer clip.Rect(image.Rectangle{Max: size}).Push(gtx.Ops).Pop()
 				cell.click.Add(gtx.Ops)
 				return dims

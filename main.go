@@ -188,7 +188,7 @@ func run(dbFile string, showFrameTimes bool) error {
 		Bg:         color.NRGBA{17, 21, 24, 255},
 		Fg:         color.NRGBA{230, 230, 230, 255},
 		ContrastFg: color.NRGBA{251, 251, 251, 255},
-		ContrastBg: color.NRGBA{50, 180, 205, 255},
+		ContrastBg: color.NRGBA{40, 170, 196, 255},
 	}
 
 	var a App
