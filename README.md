@@ -3,7 +3,6 @@
 Todaily is a simple and minimal daily habit tracker built with
 [Gio](https://gioui.org/). You start by creating a list of things you want to
 do every day. That list will then be presented to you every day going forward.
-Here's a short [demo clip](./res/demo.webm).
 
 ## Development
 
