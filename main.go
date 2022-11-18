@@ -17,7 +17,7 @@ import (
 	"gioui.org/op/paint"
 	"gioui.org/widget"
 	"gioui.org/widget/material"
-	"github.com/steverusso/giofonts/vegur"
+	"github.com/steverusso/gio-fonts/vegur"
 )
 
 type (

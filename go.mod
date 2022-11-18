@@ -3,8 +3,8 @@ module github.com/steverusso/todaily
 go 1.19
 
 require (
-	gioui.org v0.0.0-20221004231135-80196f3c3ed3
-	github.com/steverusso/giofonts v0.0.0-20221113203500-9b7d3791cd54
+	gioui.org v0.0.0-20221116222243-5c84cf7e9021
+	github.com/steverusso/gio-fonts v0.0.0-20221118164031-86919e20ff66
 	go.etcd.io/bbolt v1.3.6
 	golang.org/x/exp/shiny v0.0.0-20220827204233-334a2380cb91
 )
