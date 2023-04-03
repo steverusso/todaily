@@ -242,7 +242,7 @@ func run(dbFile string, showFrameTimes bool) error {
 				areaStack.Pop()
 				e.Frame(gtx.Ops)
 				if showFrameTimes {
-					log.Println(time.Now().Sub(start))
+					log.Println(time.Since(start))
 				}
 			case system.DestroyEvent:
 				return e.Err
